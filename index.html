@@ -185,6 +185,11 @@ section.sec{position:relative;padding:4rem 1.4rem;text-align:center}
 .sw.pla i{background:linear-gradient(135deg,#f7f8fb 0%,#b9bfcc 35%,#eef0f5 55%,#9aa1b1 80%,#dfe3ec 100%)}
 .sw span{font-family:'Cinzel',serif;font-size:.74rem;letter-spacing:.16em;color:var(--plata)}
 .note{margin-top:1.3rem;font-size:1.08rem;font-style:italic;color:#c6cfe4;line-height:1.5}
+.mask-note{margin:1.8rem auto 0;padding:1.3rem 1rem 1.2rem;border-radius:12px;background:rgba(7,18,52,.55);border:1px dashed rgba(241,220,164,.65)}
+.mask-note svg{display:block;width:62px;height:30px;margin:0 auto .6rem;color:var(--oro-cla);filter:drop-shadow(0 0 6px rgba(241,220,164,.6));animation:mk 2.6s ease-in-out infinite}
+@keyframes mk{0%,100%{transform:rotate(-6deg) scale(1)}50%{transform:rotate(6deg) scale(1.08)}}
+.mask-note .k{font-family:'Cinzel',serif;letter-spacing:.22em;font-size:.8rem;color:var(--oro-cla);margin-bottom:.35rem}
+.mask-note .s{font-family:var(--script);font-size:2.1rem;line-height:1.3;padding-top:.1em;color:#fff}
 
 /* lluvia de sobres */
 .rain{position:relative;height:110px;margin:-.4rem auto .4rem;max-width:260px;overflow:hidden;-webkit-mask-image:linear-gradient(to bottom,transparent,#000 22%,#000 70%,transparent);mask-image:linear-gradient(to bottom,transparent,#000 22%,#000 70%,transparent)}
@@ -372,6 +377,11 @@ section.sec{position:relative;padding:4rem 1.4rem;text-align:center}
         <div class="sw pla"><i></i><span>PLATEADO</span></div>
       </div>
       <p class="note">Estos colores son exclusivos para los quinceañeros.</p>
+      <div class="mask-note">
+        <svg viewBox="0 0 64 30"><use href="#mask"/></svg>
+        <p class="k">NOCHE DE MÁSCARAS</p>
+        <p class="s">¡No olvides traer tu antifaz!</p>
+      </div>
     </div>
   </section>
 
